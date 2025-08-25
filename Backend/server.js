@@ -20,4 +20,7 @@ app.listen(3000, () => {
 app.get("/checktoken", verifyToken, () => {
   res.send("token varified");
 });
+app.get("/",(req,res)=>{
+  res.send("I am from backend")
+})
 // mongodb+srv://Abhay:goldendawn@7@newcluster.1uo3zqd.mongodb.net/?retryWrites=true&w=majority&appName=NewCluster
